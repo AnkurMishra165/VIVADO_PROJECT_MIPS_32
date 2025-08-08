@@ -1,0 +1,21 @@
+# Vivado project files
+*.jou
+*.log
+*.str
+*.dcp
+*.tcl
+*.xrpt
+*.xil
+*.hw
+*.sdk
+*.bit
+*.bin
+*.hdf
+*.xpr
+
+# Vivado temporary files
+.idea/
+*.tmp
+*.bak
+.project/
+.settings/
