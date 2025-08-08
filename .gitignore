@@ -1,4 +1,5 @@
 # Vivado project files
+<<<<<<< HEAD
 *.jou
 *.log
 *.str
@@ -19,3 +20,13 @@
 *.bak
 .project/
 .settings/
+=======
+
+*.bak           # Backup files
+*.settings/     # Vivado settings directory
+*_hw.*          # Hardware-related files
+*_hw_platform.* # Hardware platform files
+*_sdk.*         # SDK-related files
+*.runs/         # Vivado's temporary runs directory
+*.srcs/         # Vivado's source files directory
+>>>>>>> origin/master
