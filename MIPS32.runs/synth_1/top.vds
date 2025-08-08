@@ -1,0 +1,476 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Jul 19 13:17:04 2025
+# Process ID         : 5740
+# Current directory  : C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.runs/synth_1/top.vds
+# Journal file       : C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-PK7J2HVP
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16869 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19419 MB
+# Available Virtual  : 8104 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/utils_1/imports/synth_1/MIPS32_PIPE.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/utils_1/imports/synth_1/MIPS32_PIPE.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11248
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 848.699 ; gain = 472.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MIPS32_PIPE' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'MIPS32_PIPE' (0#1) [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/TOP.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 957.465 ; gain = 581.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 957.465 ; gain = 581.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 957.465 ; gain = 581.668
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-3971] The signal "MIPS32_PIPE:/Reg_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 957.465 ; gain = 581.668
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP uut/EX_MEM_ALUout0, operation Mode is: A*B.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+DSP Report: Generating DSP uut/EX_MEM_ALUout0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+DSP Report: Generating DSP uut/EX_MEM_ALUout0, operation Mode is: A*B.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+DSP Report: Generating DSP uut/EX_MEM_ALUout0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+DSP Report: operator uut/EX_MEM_ALUout0 is absorbed into DSP uut/EX_MEM_ALUout0.
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "top/uut/Mem_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "top/uut/Mem_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "top/uut/Mem_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "top/uut/Mem_reg",trying to implement using LUTRAM
+INFO: [Synth 8-3971] The signal "top/uut/Reg_reg" was recognized as a true dual port RAM template.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/HALTED_reg__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[31]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[30]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[29]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[28]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[27]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[26]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[25]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[24]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[23]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[22]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[21]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[20]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[19]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[18]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[17]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[16]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[15]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[14]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[13]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[12]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[11]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[10]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[9]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[8]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[7]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[6]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[5]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[4]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[3]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[2]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[1]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_ALUout_reg[0]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_cond_reg__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[31]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[30]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[29]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[28]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[27]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[26]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[20]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[19]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[18]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[17]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[16]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[15]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[14]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[13]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[12]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uut/EX_MEM_IR_reg[11]__0/Q' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:36]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:36]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:36]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:33]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.srcs/sources_1/new/MIPS32_PIPE.v:35]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_A_reg0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_A_reg0__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_A_reg0__1) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_A_reg0__2) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_A_reg0__3) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_B_reg0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_B_reg0__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_B_reg0__1) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_B_reg0__2) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (uut/ID_EX_B_reg0__3) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1163.168 ; gain = 787.371
+---------------------------------------------------------------------------------
+ Sort Area is  uut/EX_MEM_ALUout0_0 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  uut/EX_MEM_ALUout0_0 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  uut/EX_MEM_ALUout0_3 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  uut/EX_MEM_ALUout0_3 : 0 1 : 2659 5418 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1178.992 ; gain = 803.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1178.992 ; gain = 803.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |FDRE   |    32|
+|5     |IBUF   |     2|
+|6     |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |    76|
+|2     |  uut    |MIPS32_PIPE |    41|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 882 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.855 ; gain = 1004.059
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1514.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 761f0def
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 15 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1514.301 ; gain = 1143.738
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1514.301 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Acer/Desktop/Verilog Projects/MIPS32/MIPS32.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 19 13:17:23 2025...
