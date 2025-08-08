@@ -1,0 +1,13 @@
+# Vivado project files
+*.bit           # Bitstream files
+*.bin           # Binary files
+*.xpr           # Vivado project file
+*.log           # Log files
+*.jou           # Journal files
+*.bak           # Backup files
+*.settings/     # Vivado settings directory
+*_hw.*          # Hardware-related files
+*_hw_platform.* # Hardware platform files
+*_sdk.*         # SDK-related files
+*.runs/         # Vivado's temporary runs directory
+*.srcs/         # Vivado's source files directory
